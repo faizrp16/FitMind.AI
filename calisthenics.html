@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitMind.AI - Personalized Calisthenics Training. Bodyweight training programs adapted to your fitness level and goals.">
+    <meta name="keywords" content="calisthenics, bodyweight training, fitness, workout plan, exercise progression">
+    <meta name="author" content="FitMind.AI">
+    <meta name="theme-color" content="#00A9B5">
+    
+    <title>Calisthenics Training - FitMind.AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calisthenics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="index.html" class="back-link" aria-label="Go back to home">
+            <span class="back-arrow">←</span>
+            <span>Back to Home</span>
+        </a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="calisthenics-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">💪 Calisthenics Training</h1>
+                <p class="page-description">Master bodyweight exercises with personalized progression. No equipment needed, maximum results.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" class="calisthenics-main">
+        <div class="container">
+            <!-- Personalization Section -->
+            <section class="personalization-section">
+                <h2>Customize Your Training</h2>
+                <p class="section-intro">Tell us about your fitness goals and current level. We'll create a personalized workout plan just for you.</p>
+
+                <form class="preferences-form" id="preferencesForm" novalidate>
+                    <!-- Fitness Goal -->
+                    <div class="form-group">
+                        <label for="fitnessGoal">🎯 Fitness Goal</label>
+                        <select id="fitnessGoal" name="fitnessGoal" required aria-required="true">
+                            <option value="">-- Select your goal --</option>
+                            <option value="muscle-gain">Muscle Gain (Build strength & size)</option>
+                            <option value="fat-loss">Fat Loss (Lean down & get defined)</option>
+                            <option value="general-fitness">General Fitness (Balanced training)</option>
+                        </select>
+                    </div>
+
+                    <!-- Skill Level -->
+                    <div class="form-group">
+                        <label for="skillLevel">📊 Skill Level</label>
+                        <select id="skillLevel" name="skillLevel" required aria-required="true">
+                            <option value="">-- Select your level --</option>
+                            <option value="beginner">Beginner (Just starting out)</option>
+                            <option value="intermediate">Intermediate (Training for 3-12 months)</option>
+                            <option value="advanced">Advanced (1+ years of training)</option>
+                        </select>
+                    </div>
+
+                    <!-- Equipment Available -->
+                    <div class="form-group">
+                        <label for="equipment">🛠️ Equipment Available</label>
+                        <select id="equipment" name="equipment" required aria-required="true">
+                            <option value="">-- Select equipment --</option>
+                            <option value="none">None (Bodyweight only)</option>
+                            <option value="pull-up-bar">Pull-up Bar</option>
+                            <option value="parallel-bars">Parallel Bars</option>
+                            <option value="multiple">Multiple Equipment</option>
+                        </select>
+                    </div>
+
+                    <!-- Workout Duration -->
+                    <div class="form-group">
+                        <label for="duration">⏱️ Time Per Workout</label>
+                        <select id="duration" name="duration" required aria-required="true">
+                            <option value="">-- Select duration --</option>
+                            <option value="10-20">10–20 minutes (Quick sessions)</option>
+                            <option value="20-30">20–30 minutes (Balanced)</option>
+                            <option value="30-plus">30+ minutes (Comprehensive)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large" id="generateBtn">Generate My Workout Plan</button>
+                </form>
+            </section>
+
+            <!-- Sample Workout Plan Section -->
+            <section class="workout-plan-section" id="workoutPlanSection" style="display: none;">
+                <div class="plan-header">
+                    <h2>Your Personalized Calisthenics Plan</h2>
+                    <p class="plan-details" id="planDetails"></p>
+                </div>
+
+                <div class="workout-plan-container">
+                    <div class="workout-grid" id="workoutGrid">
+                        <!-- Workout days will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Regenerate Button -->
+                <div class="regenerate-action">
+                    <button type="button" class="btn btn-secondary" id="regenerateBtn">Modify Preferences</button>
+                </div>
+            </section>
+
+            <!-- Exercise Progression Section -->
+            <section class="progression-section">
+                <h2>Exercise Progression Guide</h2>
+                <p class="section-intro">Master the fundamentals first, then progress to harder variations. This is how you build real strength.</p>
+
+                <div class="progression-grid">
+                    <!-- Push-ups Progression -->
+                    <article class="progression-card">
+                        <div class="progression-icon">📈</div>
+                        <h3>Push-ups Progression</h3>
+                        <div class="progression-path">
+                            <div class="step">
+                                <span class="step-label">Level 1</span>
+                                <p>Wall Push-ups</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 2</span>
+                                <p>Knee Push-ups</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 3</span>
+                                <p>Regular Push-ups</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 4</span>
+                                <p>Diamond Push-ups</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pull-ups Progression -->
+                    <article class="progression-card">
+                        <div class="progression-icon">⬆️</div>
+                        <h3>Pull-ups Progression</h3>
+                        <div class="progression-path">
+                            <div class="step">
+                                <span class="step-label">Level 1</span>
+                                <p>Dead Hangs</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 2</span>
+                                <p>Assisted Pull-ups</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 3</span>
+                                <p>Full Pull-ups</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 4</span>
+                                <p>Weighted Pull-ups</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Squats Progression -->
+                    <article class="progression-card">
+                        <div class="progression-icon">🦵</div>
+                        <h3>Squats Progression</h3>
+                        <div class="progression-path">
+                            <div class="step">
+                                <span class="step-label">Level 1</span>
+                                <p>Box Squats</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 2</span>
+                                <p>Bodyweight Squats</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 3</span>
+                                <p>Pistol Squat (single leg)</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 4</span>
+                                <p>Handstand Squat</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Planks Progression -->
+                    <article class="progression-card">
+                        <div class="progression-icon">⏲️</div>
+                        <h3>Core Strength (Planks)</h3>
+                        <div class="progression-path">
+                            <div class="step">
+                                <span class="step-label">Level 1</span>
+                                <p>Wall Plank</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 2</span>
+                                <p>Knee Plank</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 3</span>
+                                <p>Full Plank</p>
+                            </div>
+                            <div class="step-arrow">→</div>
+                            <div class="step">
+                                <span class="step-label">Level 4</span>
+                                <p>One-Arm Plank</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="progression-tips">
+                    <h3>Progression Tips</h3>
+                    <ul>
+                        <li><strong>Increase Reps First:</strong> Master 15-20 reps at your current level before progressing</li>
+                        <li><strong>Perfect Form Matters:</strong> Quality over quantity. Bad form = fewer gains + injury risk</li>
+                        <li><strong>Add Difficulty Gradually:</strong> One step at a time. Don't jump multiple levels</li>
+                        <li><strong>Track Your Progress:</strong> Keep a log of reps and sets to monitor improvement</li>
+                        <li><strong>Recovery is Key:</strong> Rest days allow muscles to repair and grow stronger</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Safety & Disclaimer Section -->
+            <section class="safety-section">
+                <div class="safety-content">
+                    <h2>⚠️ Safety Disclaimer</h2>
+                    <div class="disclaimer-box">
+                        <p><strong>Important:</strong> This personalized calisthenics training program is for informational and educational purposes only. It is not medical advice, professional coaching, or a substitute for medical consultation.</p>
+
+                        <h3>Before You Start</h3>
+                        <ul>
+                            <li>Consult with a healthcare provider or certified fitness professional before beginning any new exercise program, especially if you have existing health conditions</li>
+                            <li>Stop immediately if you experience pain, dizziness, or shortness of breath</li>
+                            <li>Perform proper warm-up and cool-down exercises before and after workouts</li>
+                            <li>Listen to your body and progress at your own pace</li>
+                            <li>Use proper form and technique to prevent injuries</li>
+                            <li>Stay hydrated and maintain a balanced diet</li>
+                        </ul>
+
+                        <h3>Limitations</h3>
+                        <p>FitMind.AI makes no medical claims and does not diagnose, treat, cure, or prevent any disease. Results vary based on individual effort, nutrition, rest, and genetics. Always use common sense and prioritize your safety.</p>
+
+                        <p><strong>By using this calisthenics program, you acknowledge that you have read this disclaimer and assume full responsibility for your health and safety.</strong></p>
+                    </div>
+
+                    <label class="disclaimer-checkbox">
+                        <input type="checkbox" id="disclaimerAgreement" required>
+                        <span>I understand and accept this disclaimer</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="cta-section">
+                <h2>Ready to Transform Your Body?</h2>
+                <p>Start your calisthenics journey today with personalized guidance.</p>
+                <a href="index.html" class="btn btn-primary btn-large">Back to Home</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/calisthenics.js" defer></script>
+</body>
+</html>

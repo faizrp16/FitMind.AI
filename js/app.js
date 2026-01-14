@@ -413,10 +413,18 @@ function selectWorkout(card) {
     const message = `Great! You've selected ${card.querySelector('h3').textContent} training. Let's personalize your experience!`;
     console.log('✓', message);
 
-    // Optional: Navigate to next section after a delay
-    setTimeout(() => {
-        navigateToSection('features');
-    }, 1500);
+    // Navigate to appropriate page or section
+    if (workoutType === 'calisthenics') {
+        // Redirect to calisthenics dedicated page
+        setTimeout(() => {
+            window.location.href = 'calisthenics.html';
+        }, 1000);
+    } else {
+        // For other workouts, navigate to features
+        setTimeout(() => {
+            navigateToSection('features');
+        }, 1500);
+    }
 }
 
 // ===== Initialization =====
