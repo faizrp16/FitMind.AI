@@ -233,7 +233,7 @@ function initButtonEvents() {
     if (DOM.startBtn) {
         DOM.startBtn.addEventListener('click', () => {
             trackEvent('cta_click', { button: 'start_journey' });
-            navigateToSection('features');
+            navigateToSection('workout-selection');
         });
     }
 
@@ -367,6 +367,58 @@ function initKeyboardNavigation() {
     });
 }
 
+// ===== Workout Selection Handler =====
+function initWorkoutSelection() {
+    const workoutCards = document.querySelectorAll('.workout-card');
+    
+    workoutCards.forEach(card => {
+        // Add click listener to entire card
+        card.addEventListener('click', () => {
+            selectWorkout(card);
+        });
+
+        // Add click listener to button within card
+        const button = card.querySelector('.btn-small');
+        if (button) {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                selectWorkout(card);
+            });
+        }
+    });
+}
+
+function selectWorkout(card) {
+    // Remove selected class from all cards
+    document.querySelectorAll('.workout-card').forEach(c => {
+        c.classList.remove('selected');
+    });
+
+    // Add selected class to clicked card
+    card.classList.add('selected');
+
+    const workoutType = card.getAttribute('data-workout');
+    
+    // Store user's workout selection
+    AppState.userPreferences.selectedWorkout = workoutType;
+    saveUserPreferences({ selectedWorkout: workoutType });
+
+    // Track event
+    trackEvent('workout_selected', { 
+        workout: workoutType,
+        timestamp: new Date().toISOString()
+    });
+
+    // Show confirmation message
+    const message = `Great! You've selected ${card.querySelector('h3').textContent} training. Let's personalize your experience!`;
+    console.log('✓', message);
+
+    // Optional: Navigate to next section after a delay
+    setTimeout(() => {
+        navigateToSection('features');
+    }, 1500);
+}
+
 // ===== Initialization =====
 function initApp() {
     console.log('🧠 FitMind.AI - Initializing Application');
@@ -377,6 +429,7 @@ function initApp() {
     initContactForm();
     initScrollAnimations();
     initButtonEvents();
+    initWorkoutSelection();
     initLazyLoading();
     initKeyboardNavigation();
 

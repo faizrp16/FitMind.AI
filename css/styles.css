@@ -339,6 +339,97 @@ a:hover {
     }
 }
 
+/* ===== Workout Selection Section ===== */
+.workout-selection {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--neutral) 0%, #F0FFFE 100%);
+}
+
+.selection-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 16px;
+    margin-bottom: var(--spacing-3xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-2xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workout-card {
+    padding: var(--spacing-2xl);
+    background-color: #FFFFFF;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border);
+    text-align: center;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.workout-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-lg);
+}
+
+.workout-card.selected {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #FFFFFF;
+    border-color: var(--primary);
+}
+
+.workout-card.selected h3,
+.workout-card.selected p {
+    color: #FFFFFF;
+}
+
+.workout-icon {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.workout-card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.workout-card p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.btn-small {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-height: 44px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.workout-card.selected .btn-small {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.workout-card.selected .btn-small:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* ===== Features Section ===== */
 .features {
     padding: var(--spacing-3xl) var(--spacing-lg);
@@ -733,6 +824,18 @@ footer {
         height: 200px;
     }
 
+    .workout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workout-card {
+        padding: var(--spacing-lg);
+    }
+
+    .workout-icon {
+        font-size: 40px;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
     }
@@ -771,6 +874,27 @@ footer {
     .btn {
         width: 100%;
         padding: 10px 16px;
+    }
+
+    .workout-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .workout-card {
+        padding: var(--spacing-md);
+    }
+
+    .workout-icon {
+        font-size: 36px;
+    }
+
+    .workout-card h3 {
+        font-size: 18px;
+    }
+
+    .workout-card p {
+        font-size: 13px;
     }
 
     .pricing-grid {
