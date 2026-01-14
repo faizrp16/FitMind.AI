@@ -413,9 +413,14 @@ function selectWorkout(card) {
     const message = `Great! You've selected ${card.querySelector('h3').textContent} training. Let's personalize your experience!`;
     console.log('✓', message);
 
-    // Optional: Navigate to next section after a delay
+    // Navigate to dedicated page for specific workouts
     setTimeout(() => {
-        navigateToSection('features');
+        if (workoutType === 'gym') {
+            window.location.href = 'gym.html';
+        } else {
+            // For other workouts, navigate to features section
+            navigateToSection('features');
+        }
     }, 1500);
 }
 
