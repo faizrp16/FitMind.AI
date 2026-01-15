@@ -419,6 +419,11 @@ function selectWorkout(card) {
         setTimeout(() => {
             window.location.href = 'calisthenics.html';
         }, 1000);
+    } else if (workoutType === 'gym') {
+        // Redirect to gym dedicated page
+        setTimeout(() => {
+            window.location.href = 'gym.html';
+        }, 1000);
     } else {
         // For other workouts, navigate to features
         setTimeout(() => {

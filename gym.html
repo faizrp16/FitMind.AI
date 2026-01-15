@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitMind.AI Gym - Strength training and machine-based workout programs">
+    <meta name="keywords" content="gym, strength training, machine workouts, fitness">
+    <meta name="theme-color" content="#00A9B5">
+    
+    <title>Gym Training - FitMind.AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AI Chatbot Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/11/19/01/20251119011338-LKBQKQ68.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">🧠</span>
+                <h1>FitMind.AI</h1>
+            </div>
+            <div class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li><a href="index.html#home" role="menuitem">Home</a></li>
+                <li><a href="index.html#features" role="menuitem">Features</a></li>
+                <li><a href="index.html#pricing" role="menuitem">Pricing</a></li>
+                <li><a href="index.html#about" role="menuitem">About</a></li>
+                <li><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="cta-button" id="signin-btn" aria-label="Sign in to your account">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Gym Section Hero -->
+    <header class="gym-hero" role="banner">
+        <div class="gym-hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        <div class="gym-hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">🏆 Premium Training</div>
+                <h2 class="hero-title">Transform Your Strength</h2>
+                <p class="hero-subtitle">AI-powered gym programs tailored to your goals and fitness level</p>
+                <button class="btn btn-primary btn-large" id="explore-btn">Explore Programs</button>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-cards-showcase">
+                    <div class="showcase-card card-1">
+                        <div class="card-icon">🏋️</div>
+                        <p>Strength</p>
+                    </div>
+                    <div class="showcase-card card-2">
+                        <div class="card-icon">💪</div>
+                        <p>Hypertrophy</p>
+                    </div>
+                    <div class="showcase-card card-3">
+                        <div class="card-icon">⚡</div>
+                        <p>Endurance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="gym-content">
+        <div class="container">
+            <!-- Program Overview -->
+            <section class="gym-overview">
+                <h3>Your Gym Coaching Experience</h3>
+                <p>FitMind.AI creates personalized gym workout plans that progressively challenge your muscles and build functional strength. Our AI learns your preferences and adjusts difficulty as you grow stronger.</p>
+            </section>
+
+            <!-- Workout Programs -->
+            <section class="gym-programs">
+                <h3>Available Programs</h3>
+                <div class="programs-grid">
+                    <!-- Strength Building -->
+                    <article class="program-card">
+                        <div class="program-badge">Popular</div>
+                        <div class="program-icon">🏋️</div>
+                        <h4>Strength Building</h4>
+                        <p>Focus on compound lifts and progressive overload to increase maximum strength and muscle mass.</p>
+                        <ul class="program-features">
+                            <li>Progressive weight increases</li>
+                            <li>Compound lift focus</li>
+                            <li>4-6 week cycles</li>
+                        </ul>
+                        <div class="program-stats">
+                            <span class="stat">4-5 Days/Week</span>
+                            <span class="stat">Advanced</span>
+                        </div>
+                        <button class="btn btn-primary btn-small" data-program="strength">Start Program</button>
+                    </article>
+
+                    <!-- Muscle Hypertrophy -->
+                    <article class="program-card featured">
+                        <div class="program-badge featured-badge">Most Popular</div>
+                        <div class="program-icon">💪</div>
+                        <h4>Muscle Hypertrophy</h4>
+                        <p>Build lean muscle mass with volume-focused training and optimized rep ranges for maximum growth.</p>
+                        <ul class="program-features">
+                            <li>8-12 rep range focus</li>
+                            <li>Isolation exercises</li>
+                            <li>3-4 days per week</li>
+                        </ul>
+                        <div class="program-stats">
+                            <span class="stat">3-4 Days/Week</span>
+                            <span class="stat">Intermediate</span>
+                        </div>
+                        <button class="btn btn-primary btn-small" data-program="hypertrophy">Start Program</button>
+                    </article>
+
+                    <!-- Endurance & Conditioning -->
+                    <article class="program-card">
+                        <div class="program-badge">Best Cardio</div>
+                        <div class="program-icon">⚡</div>
+                        <h4>Endurance & Conditioning</h4>
+                        <p>Improve cardiovascular fitness and muscular endurance with circuit training and metabolic workouts.</p>
+                        <ul class="program-features">
+                            <li>Circuit training</li>
+                            <li>Higher rep ranges</li>
+                            <li>Cardio integration</li>
+                        </ul>
+                        <div class="program-stats">
+                            <span class="stat">5-6 Days/Week</span>
+                            <span class="stat">Intermediate</span>
+                        </div>
+                        <button class="btn btn-primary btn-small" data-program="conditioning">Start Program</button>
+                    </article>
+
+                    <!-- Athletic Performance -->
+                    <article class="program-card">
+                        <div class="program-badge">Sport-Specific</div>
+                        <div class="program-icon">🎯</div>
+                        <h4>Athletic Performance</h4>
+                        <p>Enhance athletic ability with sport-specific training and functional strength development.</p>
+                        <ul class="program-features">
+                            <li>Sport-specific focus</li>
+                            <li>Functional movements</li>
+                            <li>Power development</li>
+                        </ul>
+                        <div class="program-stats">
+                            <span class="stat">4-5 Days/Week</span>
+                            <span class="stat">Advanced</span>
+                        </div>
+                        <button class="btn btn-primary btn-small" data-program="athletic">Start Program</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="gym-stats">
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12M+</div>
+                    <p>Workouts Completed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">94%</div>
+                    <p>Goal Achievement Rate</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.9⭐</div>
+                    <p>User Rating</p>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section class="gym-features">
+                <h3>Why Choose Gym Training?</h3>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>🔄 Progressive Overload</h4>
+
+                        <p>AI automatically adjusts weight and volume based on your performance</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📊 Form Tracking</h4>
+                        <p>Get feedback on exercise form and technique for injury prevention</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🎯 Goal Alignment</h4>
+                        <p>Every workout is tailored to your specific fitness goals</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📈 Progress Analytics</h4>
+                        <p>Track your strength gains, volume, and overall progress over time</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nutrition Integration -->
+            <section class="gym-nutrition">
+                <h3>Nutrition for Gym Success</h3>
+                <p>Maximize your gym gains with AI-personalized nutrition recommendations based on your program and goals.</p>
+                <div class="nutrition-grid">
+                    <div class="nutrition-card">
+                        <h4>Protein Intake</h4>
+                        <p>Optimal protein amounts calculated for muscle growth and recovery</p>
+                    </div>
+                    <div class="nutrition-card">
+                        <h4>Macro Planning</h4>
+                        <p>Personalized macronutrient ratios for your specific program</p>
+                    </div>
+                    <div class="nutrition-card">
+                        <h4>Meal Timing</h4>
+                        <p>Strategic meal timing around your workouts for optimal performance</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="gym-cta">
+                <h3>Ready to Transform Your Strength?</h3>
+                <p>Join thousands of gym enthusiasts using FitMind.AI to achieve their goals faster.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" id="start-gym-btn">Start Your Gym Journey</button>
+                    <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FitMind.AI</h4>
+                    <p>Your always-on calisthenics coach</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gym.html">Gym Training</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:support@fitmind.ai">support@fitmind.ai</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitMind.AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/gym.js"></script>
+</body>
+</html>
