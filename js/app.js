@@ -424,6 +424,11 @@ function selectWorkout(card) {
         setTimeout(() => {
             window.location.href = 'gym.html';
         }, 1000);
+    } else if (workoutType === 'sports') {
+        // Redirect to sports dedicated page
+        setTimeout(() => {
+            window.location.href = 'sports.html';
+        }, 1000);
     } else {
         // For other workouts, navigate to features
         setTimeout(() => {
