@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitMind.AI Yoga - Mindful yoga sessions and flexibility training programs">
+    <meta name="keywords" content="yoga, flexibility, mindfulness, wellness, yoga training">
+    <meta name="theme-color" content="#00A9B5">
+    
+    <title>Yoga Training - FitMind.AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AI Chatbot Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/11/19/02/20251119023226-BWDJXH91.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">🧠</span>
+                <h1>FitMind.AI</h1>
+            </div>
+            <div class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li><a href="index.html#home" role="menuitem">Home</a></li>
+                <li><a href="index.html#features" role="menuitem">Features</a></li>
+                <li><a href="index.html#pricing" role="menuitem">Pricing</a></li>
+                <li><a href="index.html#about" role="menuitem">About</a></li>
+                <li><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="cta-button" id="signin-btn" aria-label="Sign in to your account">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Yoga Section Hero -->
+    <header class="yoga-hero" role="banner">
+        <div class="yoga-hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        <div class="yoga-hero-container">
+            <h2 class="yoga-hero-title">Mindful Yoga Training</h2>
+            <p class="yoga-hero-subtitle">Enhance flexibility, balance, and inner peace with AI-guided yoga sessions tailored to your level</p>
+            <button class="btn btn-primary" id="start-yoga-btn" aria-label="Start yoga training">Start Your Yoga Journey</button>
+        </div>
+    </header>
+
+    <!-- HeyGen Video Section -->
+    <section class="heygen-video-section" role="region" aria-label="Introduction Video">
+        <div class="container">
+            <h2>Experience FitMind.AI Yoga</h2>
+            <p class="video-subtitle">Watch our introduction to personalized yoga training</p>
+            <div class="video-container">
+                <iframe 
+                    src="AI Yoga Evolved.mp4" 
+                    title="FitMind.AI Yoga Introduction"
+                    width="100%" 
+                    height="600" 
+                    frameborder="0" 
+                    allowfullscreen
+                    style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 169, 181, 0.2);">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga Programs Section -->
+    <section class="yoga-programs" role="region" aria-label="Yoga Programs">
+        <div class="container">
+            <h2>Our Yoga Programs</h2>
+            <div class="programs-grid">
+                <!-- Beginner Yoga -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">🧘‍♀️</div>
+                    <h3>Beginner Yoga</h3>
+                    <p>Perfect for those new to yoga. Learn foundational poses, breathing techniques, and build body awareness.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Easy</span>
+                        <span class="duration">Duration: 20-30 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Beginner Yoga">Explore</button>
+                </div>
+
+                <!-- Intermediate Yoga -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">🧘</div>
+                    <h3>Intermediate Yoga</h3>
+                    <p>Build strength and flexibility with more challenging poses. Improve balance and deepen your practice.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Medium</span>
+                        <span class="duration">Duration: 30-45 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Intermediate Yoga">Explore</button>
+                </div>
+
+                <!-- Advanced Yoga -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">🧘‍♂️</div>
+                    <h3>Advanced Yoga</h3>
+                    <p>Master complex poses and sequences. Unlock full body potential with advanced techniques and breathing.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Hard</span>
+                        <span class="duration">Duration: 45-60 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Advanced Yoga">Explore</button>
+                </div>
+
+                <!-- Power Yoga -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">⚡</div>
+                    <h3>Power Yoga</h3>
+                    <p>High-intensity yoga focused on strength building. Combine yoga with cardio for a full-body workout.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Hard</span>
+                        <span class="duration">Duration: 40-50 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Power Yoga">Explore</button>
+                </div>
+
+                <!-- Restorative Yoga -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">☮️</div>
+                    <h3>Restorative Yoga</h3>
+                    <p>Slow-paced and relaxing. Perfect for recovery, stress relief, and improving sleep quality.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Easy</span>
+                        <span class="duration">Duration: 30-40 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Restorative Yoga">Explore</button>
+                </div>
+
+                <!-- Vinyasa Flow -->
+                <div class="program-card" role="article">
+                    <div class="program-icon">🌊</div>
+                    <h3>Vinyasa Flow</h3>
+                    <p>Dynamic flowing sequences synchronized with breath. Improve cardiovascular fitness and flexibility.</p>
+                    <div class="program-details">
+                        <span class="difficulty">Difficulty: Medium</span>
+                        <span class="duration">Duration: 50-60 mins</span>
+                    </div>
+                    <button class="btn btn-secondary" aria-label="Explore Vinyasa Flow">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="yoga-benefits" role="region" aria-label="Benefits of Yoga">
+        <div class="container">
+            <h2>Why Choose Our Yoga Training?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item" role="article">
+                    <h3>📱 Personalized Sessions</h3>
+                    <p>AI-powered recommendations based on your goals, fitness level, and preferences. Our intelligent system learns your body's unique needs and creates custom sequences that evolve with your progress. Whether you're recovering from an injury or pushing for advanced poses, your practice adapts to you.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>🎯 Progress Tracking</h3>
+                    <p>Monitor your flexibility improvements, strength gains, and meditation achievements with detailed analytics. Track metrics like range of motion, balance improvements, and consistency. Visual progress reports keep you motivated and show tangible results of your practice over weeks and months.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>🧠 Mind-Body Connection</h3>
+                    <p>Learn breathing techniques and meditation to reduce stress and enhance mental clarity. Our holistic approach combines physical postures with pranayama (breathing) and mindfulness practices. Experience improved focus, reduced anxiety, and better emotional regulation through integrated mind-body training.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>⏰ Flexible Scheduling</h3>
+                    <p>Train anytime, anywhere with sessions that fit your busy lifestyle. From 15-minute quick sessions to 60-minute deep practices, choose what works for you. Access guided videos, audio-only sessions, and live classes whenever inspiration strikes—no studio commitment required.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>🎓 Expert Guidance</h3>
+                    <p>Learn from certified yoga instructors through AI guidance and video tutorials. Our platform features detailed form corrections, alignment cues, and modifications for each pose. Real-time feedback helps you build proper technique while preventing injuries and maximizing benefits from every session.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>🤝 Community Support</h3>
+                    <p>Connect with like-minded yoga practitioners and share your fitness journey. Join challenges, participate in group sessions, and get encouragement from a supportive community. Share achievements, ask questions, and find accountability partners on your wellness path.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>💪 Injury Prevention & Recovery</h3>
+                    <p>Our AI system identifies your body's limitations and suggests modifications to prevent injuries. Perfect for rehabilitation programs, the system respects existing conditions while gradually building strength. Post-injury recovery is guided with evidence-based progressions and safe transitions.</p>
+                </div>
+                <div class="benefit-item" role="article">
+                    <h3>🌍 Holistic Wellness Integration</h3>
+                    <p>Yoga training integrates with nutrition guidance, sleep optimization, and stress management. Receive personalized wellness recommendations that complement your yoga practice for complete mind-body-spirit transformation. Achieve balance in all areas of your life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" role="region" aria-label="Call to Action">
+        <div class="container">
+            <h2>Start Your Yoga Journey Today</h2>
+            <p>Join thousands of practitioners experiencing the transformative power of yoga with FitMind.AI</p>
+            <button class="btn btn-primary btn-large" id="cta-btn" aria-label="Get started with yoga training">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FitMind.AI</h4>
+                    <p>Your personalized AI fitness coach for yoga, strength training, and overall wellness.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gym.html">Gym Training</a></li>
+                        <li><a href="yoga2.html">Yoga Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitMind.AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/yoga.js" defer></script>
+</body>
+</html>
