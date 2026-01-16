@@ -1,0 +1,90 @@
+{
+  "name": "fitmind-ai",
+  "version": "1.0.0",
+  "description": "Your always-on calisthenics coach that learns your goals, adapts to your progress, and delivers personalised workouts and nutrition for a stronger body and sharper mind.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "live-server --port=8080 --open=index.html --watch=css,js,index.html",
+    "dev": "live-server --port=3000 --reload-delay=500",
+    "serve": "http-server -p 8000 -o",
+    "build": "echo 'Build process would go here'",
+    "test": "echo 'Test suite would go here'",
+    "lint": "eslint js/",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "fitness",
+    "ai",
+    "calisthenics",
+    "workout",
+    "nutrition",
+    "personalized",
+    "coach",
+    "health",
+    "wellness"
+  ],
+  "author": "FitMind.AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fitmind-ai.git"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "liveServer": {
+    "port": 8080,
+    "host": "127.0.0.1",
+    "root": "./",
+    "open": true,
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".DS_Store"
+    ],
+    "wait": 1000,
+    "mount": [
+      ["/components", "./components"]
+    ],
+    "showExplorer": false,
+    "showNotifications": true
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn"
+    }
+  }
+}

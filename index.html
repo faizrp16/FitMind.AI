@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitMind.AI - Your always-on calisthenics coach that learns your goals, adapts to your progress, and delivers personalised workouts and nutrition for a stronger body and sharper mind.">
+    <meta name="keywords" content="fitness, AI, calisthenics, workout, nutrition, personalized training">
+    <meta name="author" content="FitMind.AI">
+    <meta name="theme-color" content="#00A9B5">
+    
+    <title>FitMind.AI - Personalized AI Fitness Coach</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">🧠</span>
+                <h1>FitMind.AI</h1>
+            </div>
+            <div class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li><a href="#home" role="menuitem">Home</a></li>
+                <li><a href="#features" role="menuitem">Features</a></li>
+                <li><a href="#pricing" role="menuitem">Pricing</a></li>
+                <li><a href="#about" role="menuitem">About</a></li>
+                <li><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="cta-button" id="signin-btn" aria-label="Sign in to your account">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero" role="banner">
+        <div class="hero-content">
+            <h2 class="hero-title">Personalised fitness guidance, adapting to your goals as you progress.</h2>
+            <p class="hero-subtitle">AI-powered workouts tailored to your goals, adapted to your progress. Train smarter, not harder.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" id="start-btn" aria-label="Start your fitness journey">Start Your Journey</button>
+                <button class="btn btn-secondary" id="learn-more-btn" aria-label="Learn more about FitMind.AI">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="animated-circles" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <!-- Workout Selection Section -->
+    <section id="workout-selection" class="workout-selection">
+        <div class="container">
+            <h2 class="section-title">Choose Your Fitness Path</h2>
+            <p class="selection-subtitle">Select your preferred workout style and we'll customize your coaching experience</p>
+            <div class="workout-grid">
+                <!-- Sports Card -->
+                <article class="workout-card" data-workout="sports">
+                    <div class="workout-icon">⚽</div>
+                    <h3>Sports</h3>
+                    <p>Multi-sport training and athletic performance enhancement</p>
+                    <button class="btn btn-primary btn-small" aria-label="Select Sports training">Select</button>
+                </article>
+
+                <!-- Gym Card -->
+                <a href="gym.html" class="workout-card" data-workout="gym" style="text-decoration: none; color: inherit;">
+                    <div class="workout-icon">🏋️</div>
+                    <h3>Gym</h3>
+                    <p>Strength training and machine-based workout programs</p>
+                    <button class="btn btn-primary btn-small" aria-label="Select Gym training">Select</button>
+                </a>
+
+                <!-- Calisthenics Card -->
+                <a href="calisthenics.html" class="workout-card" data-workout="calisthenics" style="text-decoration: none; color: inherit;">
+                    <div class="workout-icon">💪</div>
+                    <h3>Calisthenics</h3>
+                    <p>Bodyweight exercises for strength and functional fitness</p>
+                    <button class="btn btn-primary btn-small" aria-label="Select Calisthenics training">Select</button>
+                </a>
+
+                <!-- Running Card -->
+                <a href="running.html" class="workout-card" data-workout="running" style="text-decoration: none; color: inherit;">
+                    <div class="workout-icon">🏃</div>
+                    <h3>Running</h3>
+                    <p>Distance running, speed work, and endurance training</p>
+                    <button class="btn btn-primary btn-small" aria-label="Select Running training">Select</button>
+                </a>
+
+                <!-- Yoga Card -->
+                <a href="1yoga.html" class="workout-card" data-workout="yoga" style="text-decoration: none; color: inherit;">
+                    <div class="workout-icon">🧘</div>
+                    <h3>Yoga</h3>
+                    <p>Flexibility, mindfulness, and holistic wellness practice</p>
+                    <button class="btn btn-primary btn-small" aria-label="Select Yoga training">Select</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" role="main">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Progress Tracking</h3>
+                    <p>Real-time analytics and insights into your fitness journey. Track every rep, every day.</p>
+                </article>
+
+                <!-- Feature 2 -->
+                <article class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Adaptation</h3>
+                    <p>Machine learning algorithms learn your preferences and adjust workouts in real-time.</p>
+                </article>
+
+                <!-- Feature 3 -->
+                <article class="feature-card">
+                    <div class="feature-icon">🍎</div>
+                    <h3>Personalized Nutrition</h3>
+                    <p>Nutrition plans customized to your fitness goals and dietary preferences.</p>
+                </article>
+
+                <!-- Feature 4 -->
+                <article class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Train anywhere, anytime. Full functionality on all devices, online or offline.</p>
+                </article>
+
+                <!-- Feature 5 -->
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Setting</h3>
+                    <p>Define your fitness goals and let AI create a customized roadmap for success.</p>
+                </article>
+
+                <!-- Feature 6 -->
+                <article class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Mind & Body Balance</h3>
+                    <p>Sharpen your mind with cognitive exercises integrated into your fitness routine.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Flexible Pricing Plans</h2>
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <article class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="price"><span class="currency">$</span>0<span class="period">/month</span></p>
+                    <p class="plan-description">Perfect for beginners</p>
+                    <ul class="features-list">
+                        <li>✓ 5 basic workouts</li>
+                        <li>✓ Progress tracking</li>
+                        <li>✗ AI personalization</li>
+                        <li>✗ Nutrition plans</li>
+                    </ul>
+                    <button class="btn btn-secondary">Get Started</button>
+                </article>
+
+                <!-- Pro Plan -->
+                <article class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <p class="price"><span class="currency">$</span>9.99<span class="period">/month</span></p>
+                    <p class="plan-description">For serious fitness enthusiasts</p>
+                    <ul class="features-list">
+                        <li>✓ Unlimited workouts</li>
+                        <li>✓ AI-powered personalization</li>
+                        <li>✓ Nutrition planning</li>
+                        <li>✓ Progress analytics</li>
+                    </ul>
+                    <button class="btn btn-primary">Start Free Trial</button>
+                </article>
+
+                <!-- Elite Plan -->
+                <article class="pricing-card">
+                    <h3>Elite</h3>
+                    <p class="price"><span class="currency">$</span>19.99<span class="period">/month</span></p>
+                    <p class="plan-description">For peak performance</p>
+                    <ul class="features-list">
+                        <li>✓ Everything in Pro</li>
+                        <li>✓ 1-on-1 AI coaching</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <button class="btn btn-secondary">Start Free Trial</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why FitMind.AI?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>FitMind.AI combines cutting-edge artificial intelligence with proven calisthenics training principles to deliver a revolutionary fitness experience.</p>
+                    <p>Our platform learns from your habits, preferences, and progress to create workouts that challenge you appropriately while keeping you engaged and motivated.</p>
+                    <p>Built by fitness experts and AI engineers, FitMind.AI is your partner in achieving both physical strength and mental clarity.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>50K+</h4>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>10M+</h4>
+                        <p>Workouts Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>95%</h4>
+                        <p>User Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                <p class="success-message" id="success-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FitMind.AI</h4>
+                    <p>Your always-on calisthenics coach.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Join us on LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FitMind.AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
