@@ -429,6 +429,11 @@ function selectWorkout(card) {
         setTimeout(() => {
             window.location.href = 'sports.html';
         }, 1000);
+    } else if (workoutType === 'running') {
+        // Redirect to running dedicated page
+        setTimeout(() => {
+            window.location.href = 'running.html';
+        }, 1000);
     } else {
         // For other workouts, navigate to features
         setTimeout(() => {
