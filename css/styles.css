@@ -1620,3 +1620,139 @@ footer {
 .modal-buttons .btn {
     flex: 1;
 }
+/* ===== FAQ Section ===== */
+.gym-faq {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.gym-faq h3 {
+    font-size: 36px;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #FFFFFF;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+    transition: all var(--transition-normal);
+    overflow: hidden;
+}
+
+.faq-item:hover {
+    border-color: var(--primary);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg);
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: all var(--transition-fast);
+}
+
+.faq-question:hover {
+    background: var(--neutral);
+}
+
+.faq-question span:first-child {
+    text-align: left;
+    flex: 1;
+}
+
+.faq-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all var(--transition-fast);
+    margin-left: var(--spacing-lg);
+    flex-shrink: 0;
+}
+
+.faq-question.active .faq-icon {
+    transform: rotate(45deg);
+    background: var(--primary-dark);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+    background: var(--neutral);
+}
+
+.faq-answer.show {
+    max-height: 500px;
+}
+
+.faq-answer p {
+    padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== Responsive FAQ ===== */
+@media (max-width: 768px) {
+    .faq-question {
+        padding: var(--spacing-md);
+        font-size: 15px;
+    }
+
+    .faq-answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+        font-size: 14px;
+    }
+
+    .gym-faq h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 0;
+    }
+
+    .faq-item {
+        border-radius: var(--radius-md);
+    }
+
+    .faq-question {
+        padding: var(--spacing-md);
+        font-size: 14px;
+    }
+
+    .faq-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    }
+}

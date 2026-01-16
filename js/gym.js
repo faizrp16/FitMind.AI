@@ -3,6 +3,13 @@
  * Handles gym-specific functionality and program selection
  */
 
+// ===== FAQ Toggle Function =====
+function toggleFAQ(button) {
+    button.classList.toggle('active');
+    const answer = button.nextElementSibling;
+    answer.classList.toggle('show');
+}
+
 // ===== Gym Page State =====
 const GymState = {
     selectedProgram: null,
